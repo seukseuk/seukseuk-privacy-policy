@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>슥슥 키보드 개인정보처리방침</title>
+  <meta name="description" content="슥슥 키보드 개인정보처리방침">
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+    }
+    body {
+      margin: 0;
+      background: Canvas;
+      color: CanvasText;
+    }
+    main {
+      width: min(860px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      line-height: 1.25;
+    }
+    .effective-date {
+      margin: 0 0 36px;
+      opacity: .7;
+    }
+    section {
+      margin-top: 32px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: LinkText;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>슥슥 키보드 개인정보처리방침</h1>
+    <p class="effective-date">시행일: 2026년 8월 10일</p>
+
+    <p>슥슥 키보드(이하 ‘앱’)는 사용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱이 처리하는 정보, 저장 위치, 외부 서비스 이용 및 삭제 방법을 안내합니다.</p>
+
+    <section>
+      <h2>1. 개발자가 직접 수집하는 개인정보</h2>
+      <p>앱 개발자는 별도의 사용자 데이터 서버를 운영하지 않습니다. 키보드 입력 내용과 주변 문맥은 입력·한글수정·단축어·번역 등 사용자가 요청한 기능을 제공하기 위해 기기 안에서 일시적으로 처리될 수 있으나, 개발자 서버에 저장하거나 전송하지 않습니다. 비밀번호 등 보안 입력 대상에서는 개인정보 보호를 위해 일부 기능이 제한됩니다.</p>
+    </section>
+
+    <section>
+      <h2>2. 기기에 저장되는 정보</h2>
+      <p>키보드 설정·키맵·프리셋·테마, 사용자가 등록한 단축어, 클립보드 기록, 보관함의 메모와 할 일, 선택한 배경 사진의 접근 정보가 앱 전용 저장공간에 저장될 수 있습니다. 단축어와 일반 클립보드 기록은 보관함과 달리 별도 암호화하지 않습니다. 보관함 데이터는 Android Keystore의 암호화 키를 이용해 기기 안에 암호화하여 저장됩니다.</p>
+      <p>키보드가 활성화된 동안 일반 텍스트 클립보드가 변경되면 슥슥 클립보드 기록 기능을 위해 기기 안에 저장될 수 있으며, 클립보드 패널을 열 때 현재 클립보드와 동기화할 수 있습니다. Android가 민감한 클립으로 표시한 내용이나 비밀번호·PIN 등 보안 입력 대상에서는 클립보드 기록과 빠른 클립보드 제안을 차단합니다.</p>
+      <p>사용자가 직접 내보내는 설정 백업은 사용자가 선택한 위치에 암호화되지 않은 JSON 파일로 저장됩니다. 백업에는 설정·프리셋·단축어 등이 포함될 수 있지만 슥슥 클립보드 기록과 보관함 내용, 배경 사진 원본 파일은 포함하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>3. 번역 기능</h2>
+      <p>번역 기능은 Google ML Kit의 기기 내 번역을 사용합니다. 번역할 문장과 번역 결과의 실제 내용은 기기 안에서 처리되며, 번역 모델을 처음 내려받거나 업데이트할 때 인터넷 연결이 사용될 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>4. Google ML Kit 및 Firebase 진단 정보</h2>
+      <p>Google ML Kit Translate SDK는 진단과 사용 분석을 위해 기기·앱 정보, 설치 단위 식별자, 성능 지표, API·모델 관련 이벤트, 오류 코드, 입력·출력 크기, 설정된 출발어·도착어 등의 정보를 Google에 전송할 수 있습니다. Translate SDK는 원격 구성 진단을 위해 Firebase Remote Config와 Firebase Installations를 사용하며, 이 과정에서 설치 식별자와 국가 코드, 언어 코드, 시간대, OS·플랫폼 및 앱 관련 정보 등이 처리될 수 있습니다. 이러한 전송 데이터는 Google SDK 정책에 따라 전송 중 암호화되며, 번역할 문장과 번역 결과의 실제 내용은 해당 진단 정보에 포함되지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>5. 생체 인증</h2>
+      <p>앱은 보관함 보호를 위해 기기의 생체 인증 또는 기기 잠금 인증을 사용할 수 있습니다. 지문이나 얼굴 정보 자체는 Android 시스템에서 처리되며 앱이 직접 읽거나 저장하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>6. 외부 서비스 및 제3자 제공</h2>
+      <p>앱 개발자는 사용자의 정보를 판매하거나 광고업체에 제공하지 않습니다. 번역 기능에 포함된 Google ML Kit 및 관련 Firebase 구성요소가 처리하는 진단·설치·원격 구성 정보는 Google의 서비스 제공, 진단 및 유지보수 정책에 따라 Google로 전송될 수 있습니다. 앱에는 광고 SDK나 개발자 자체 분석 SDK가 포함되어 있지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>7. 정보 삭제</h2>
+      <p>키보드 설정·키맵·프리셋·테마 등은 앱 설정의 전체 초기화로 초기화할 수 있습니다. 단축어는 단축어 관리 화면에서 삭제할 수 있고, 슥슥 클립보드 기록은 클립보드 패널에서 개별 또는 전체 삭제할 수 있습니다. 보관함의 메모와 할 일은 보관함 관리 화면에서 항목별 삭제 및 제공되는 일괄 삭제 기능으로 삭제할 수 있습니다. Android 설정의 앱 데이터 삭제 또는 앱 삭제를 하면 앱 전용 저장공간의 데이터가 제거됩니다. 사용자가 기기 저장소에 직접 내보낸 백업 JSON 파일은 앱 삭제와 별개이므로 저장한 위치에서 직접 삭제해야 합니다.</p>
+    </section>
+
+    <section>
+      <h2>8. 권한 사용</h2>
+      <p>인터넷 권한은 번역 모델 다운로드·업데이트와 ML Kit 관련 서비스 통신에, 진동 권한은 키 입력 진동에, 생체 인증·지문 권한은 보관함 잠금 해제에 사용됩니다. 앱은 위치, 연락처, 카메라, 마이크, 전화, SMS 또는 광범위한 사진·저장소 접근 권한을 요청하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>9. 방침 변경</h2>
+      <p>앱 기능, 외부 SDK 또는 관련 법령이 변경되면 이 개인정보처리방침도 변경될 수 있습니다. 중요한 변경 사항은 앱 배포 페이지 또는 앱 안의 안내를 통해 알립니다.</p>
+    </section>
+
+    <section>
+      <h2>10. 문의</h2>
+      <p>개인정보 보호와 관련된 문의: <a href="mailto:seukseuk.support@gmail.com">seukseuk.support@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
